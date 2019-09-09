@@ -1,16 +1,17 @@
 {
-    "extends": [
-        "airbnb",
-        "prettier",
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js"]
+      }
     ],
-    "rules": {
-        "react/jsx-filename-extension": [
-            1, 
-            { 
-                "extensions": [
-                    ".js"
-                    ] 
-            }
-         ]
-    }
+    "react/prefer-stateless-function": [
+      0,
+      {
+        "ignorePureComponents": true
+      }
+    ]
+  }
 }
