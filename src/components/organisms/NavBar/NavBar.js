@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Nav = styled.nav`
   display:flex;
@@ -33,11 +33,20 @@ const ListOfNavItem = styled.ul`
 
 const ListItem = styled.li`
  list-style:none;
+ 
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   text-decoration:none;
   font-weight:bold;
+  &.active {
+    border-bottom:2px solid gold;
+    border-radius: 1px;
+    }
+  &:visited {
+    color: black;
+    }
+
 
 `;
 
